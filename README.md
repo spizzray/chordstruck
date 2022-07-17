@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+FILES AND THEIR USES
 
-Things you may want to cover:
+app/config/routes.rb - url routes
 
-* Ruby version
+app/javascript/components - material UI design for the views
 
-* System dependencies
+app/views/home/index.html.erb - currently the homepage, subject to change
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+app/assets - put all the uploaded visuals (png) here
