@@ -47,6 +47,20 @@ a {
   background-color: #ffffff;
 }
 
+.settingBtn {
+  display: flex;
+  font-weight: bold;
+  font-size: 1.4em;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin: 5% 1% 1% 45%;
+  width: 500px;
+  height:auto;
+  justify-content: center;
+}
+
 .createBtn:hover {
   background-color: #ffffff;
 }

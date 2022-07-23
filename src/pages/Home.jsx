@@ -34,8 +34,8 @@ const Home = () => {
                        TUNING
                     </Button>
 
-                    <Button className="bigHomeBtn" >
-                        SETTINGs
+                    <Button className="bigHomeBtn" onClick={() => {navigate('/settings')}} >
+                        SETTINGS
                     </Button>
                 </Box>
             </Box>
