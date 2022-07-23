@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import {
   AppBar,
@@ -36,11 +37,12 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function Navbar() {
+  let navigate = useNavigate();
   const classes = useStyles();
   
   return (
     <div>
-      <Fab aria-label="add" className='homeBtn'>
+      <Fab aria-label="add" className='homeBtn' onClick={() => {navigate('/')}}>
           <HomeIcon className="add-icon" style={{  fill: "#000000" }} />
       </Fab>
 

@@ -1,6 +1,9 @@
 import React from "react";
 import Typography from '@material-ui/core/Typography';
 
+import { createMuiTheme, ThemeProvider } from '@material-ui/core';
+import AudioPlayer from 'material-ui-audio-player';
+
 
 const ChordRec = () => {
       return (

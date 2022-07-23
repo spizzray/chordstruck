@@ -33,7 +33,7 @@ a {
 }
 
 .createBtn:hover {
-  background-color: #c2c2c2;
+  background-color: #ffffff;
 }
 
 .soundBtn {
@@ -56,10 +56,11 @@ a {
   font-size: 1.4em;
   color: #000000;
   border: 1px solid #000000;
-  border-radius: 10px;
+  border-radius: 300px;
   background-color: #ffffff;
   margin: 0.5rem;
-  width: auto;
+  width: 200px;
+  height:180px;
 }
 
 .notifications-icon {

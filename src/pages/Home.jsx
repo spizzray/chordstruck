@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 import Typography from '@material-ui/core/Typography';
 import Button from '@mui/material/Button';
@@ -8,6 +9,7 @@ import Box from '@mui/material/Box';
 
 
 const Home = () => {
+    let navigate = useNavigate();
     return (
         <div className = "App" >
             <Box height="100vh" display="flex" flexDirection="column"
@@ -20,20 +22,20 @@ const Home = () => {
                 }}>
                 <Box justifyContent="space-between" sx={{ display: 'flex', m: '10% 1% 1% 1%' }}>
                                     
-                    <Button className="bigHomeBtn" >
-                        Return to Feed
+                    <Button className='bigHomeBtn'>
+                        BASICS
+                    </Button>
+
+                    <Button className="bigHomeBtn" onClick={() => {navigate('/chordRec')}} >
+                        LEARN A SONG
                     </Button>
 
                     <Button className="bigHomeBtn" >
-                        Return to Feed
+                       TUNING
                     </Button>
 
                     <Button className="bigHomeBtn" >
-                        Return to Feed
-                    </Button>
-
-                    <Button className="bigHomeBtn" >
-                        Return to Feed
+                        SETTINGs
                     </Button>
                 </Box>
             </Box>
