@@ -1,6 +1,6 @@
 import React from "react";
 import {Outlet} from "react-router-dom";
-import Navbar from "./pages/NavBar.jsx";
+import Navbar from "./components/NavBar.jsx";
 import "./App.css";
 
 import { ThemeProvider, createTheme, StyledEngineProvider } from '@mui/material/styles';
