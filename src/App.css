@@ -164,9 +164,13 @@ a {
   flex-direction: row-reverse;
 }
 
-.home-button {
-  background-color: #122a93;
-  padding: 5% 10%;
+.okButton {
+  color: white;
+  background-color: #000000;
+  display: flex;
+  margin: auto;
+  padding: 2% 20% 2% 20%;
+  margin-bottom: 2%;
 
 }
 
