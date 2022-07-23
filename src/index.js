@@ -11,7 +11,7 @@ export default function App() {
   const theme = createTheme({
     palette: {
       primary: {
-        main: '#D22108',
+        main: '#000000',
       },
     },
   });

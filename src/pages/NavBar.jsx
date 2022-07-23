@@ -10,6 +10,8 @@ import {
 } from "@material-ui/core";
 
 import HomeIcon from '@mui/icons-material/Home';
+import VolumeUpIcon from '@mui/icons-material/VolumeUp';
+import Fab from '@mui/material/Fab';
 
 const useStyles = makeStyles((theme) => ({
   navlinks: {
@@ -28,8 +30,9 @@ const useStyles = makeStyles((theme) => ({
     "&:hover": {
       color: "white",
       borderBottom: "1px solid white",
-    },
+    }, 
   },
+
 }));
 
 function Navbar() {
@@ -37,7 +40,15 @@ function Navbar() {
   
   return (
     <div>
-      <AppBar position="static">
+      <Fab aria-label="add" className='homeBtn'>
+          <HomeIcon className="add-icon" style={{  fill: "#000000" }} />
+      </Fab>
+
+      <Fab aria-label="add" className='soundBtn'>
+          <VolumeUpIcon className="add-icon" style={{ fill: "#000000" }} />
+      </Fab>
+
+      {/* <AppBar position="static">
         <CssBaseline />
         <Toolbar>
           <Typography variant="h4" className={classes.logo}>
@@ -55,7 +66,7 @@ function Navbar() {
               
             </div>
         </Toolbar>
-      </AppBar>
+      </AppBar> */}
 
     
     </div>

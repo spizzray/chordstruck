@@ -8,7 +8,7 @@ body {
 }
 
 a {
-  color: #737373;
+  color: #ffffff;
   font-weight: bold;
 }
 
@@ -23,22 +23,43 @@ a {
   margin-top: 3rem;
 }
 
-.createBtn {
+.homeBtn {
   position: fixed;
-  bottom: 80px;
+  border: 1px solid #000000;
+  top: 15px;
   right: 0px;
-  transform: translateX(-50%);
-  background-color: #392421;
+  transform: translateX(-30%);
+  background-color: #ffffff;
 }
 
 .createBtn:hover {
-  background-color: #3f2926;
+  background-color: #c2c2c2;
+}
+
+.soundBtn {
+  position: fixed;
+  border: 1px solid #000000;
+  top: 15px;
+  right: 0px;
+  transform: translateX(-160%);
+  background-color: #ffffff;
 }
 
 @media (min-width: 600px) {
   .createBtn {
       right: 30px;
   }
+}
+
+.bigHomeBtn {
+  font-weight: bold;
+  font-size: 1.4em;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin: 0.5rem;
+  width: auto;
 }
 
 .notifications-icon {
