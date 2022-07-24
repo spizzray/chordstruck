@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import ReactDOM from "react-dom";
 
 import Typography from '@material-ui/core/Typography';
@@ -13,6 +14,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 import Fab from '@mui/material/Fab';
 
 import InfoIcon from '@mui/icons-material/Info';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
 // import PlayerControls from "../components/PlayerControls";
 import ReactPlayer from "react-player";
@@ -33,6 +35,7 @@ const useStyles = makeStyles({
 
 const ChordRec = () => {
   const classes = useStyles();
+  let navigate = useNavigate();
 
   // const [videoFilePath, setVideoFilePath] = useState(null);
   // const handleVideoUpload = (event) => {
@@ -99,9 +102,18 @@ const ChordRec = () => {
         aria-describedby="alert-dialog-description"
         sx={{
           maxWidth: 'xs',
-          '& .MuiDialog-paper': { borderRadius: 3, width: '60%', p: '3% 1% 3% 1%'}
+          '& .MuiDialog-paper': { borderRadius: 3, width: '60%', p: '1% 1% 3% 1%'}
         }}>
-      
+        <DialogActions>
+          <Button variant="text" size="small" textalign='left' sx={{ paddingRight: '80%' }} onClick={() => {
+            navigate(-1);
+          }}>
+            <ArrowBackIosIcon sx={{ color: "#000000" }} />
+            <Typography className='backBtn' variant="button" fontSize='15' fontWeight='900' >
+              BACK
+            </Typography>
+          </Button>
+        </DialogActions>
         <DialogActions >
           <Button className='songButton' sx={{borderRadius:3}} onClick={handleClose}>
             NEW SONG
