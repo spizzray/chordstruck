@@ -12,7 +12,7 @@ const Settings = () => {
     let navigate = useNavigate();
     return (
         <div className = "App" >
-            <Typography className='songTitle' variant="h5"  style={{ color:"#000000", marginTop: '60px'}} >
+            <Typography className='ordinaryTitle' variant="h4"  style={{ fontWeight: '900', color:"#000000", marginTop: '50px'}} >
                 SETTINGS
             </Typography>
 

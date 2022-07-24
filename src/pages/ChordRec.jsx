@@ -10,11 +10,15 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
+import Fab from '@mui/material/Fab';
 
-import PlayerControls from "../components/PlayerControls";
+import InfoIcon from '@mui/icons-material/Info';
+
+// import PlayerControls from "../components/PlayerControls";
 import ReactPlayer from "react-player";
-import { makeStyles, withStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
+import { padding } from "@mui/system";
 
 // import mp3 from "public/Wonderwall.mp3";
 // import mp4 from "./chords.mp4";
@@ -38,7 +42,7 @@ const ChordRec = () => {
   // <input type="./chords.mp4" onChange={handleVideoUpload} />
 
   const [open, setOpen] = useState(true);
-  const[playing] = useState(false)
+  const [openinstruct, setInstruct] = useState(false);
   const handleClickOpen = () => {
     setOpen(true);
   };
@@ -47,14 +51,26 @@ const ChordRec = () => {
     setOpen(false);
   };
 
+  const instuctClickOpen = () => {
+    setInstruct(true);
+  };
+
+  const instructClose = () => {
+    setInstruct(false);
+  };
+
 
   return (
     <div >
-      <Box className='songTitle'>
-        <Typography  variant="h5"  style={{ color:"#000000"}} >
+      <Box className='songTitle' >
+        <Typography  variant="h5" >
           WONDERWALL BY OASIS
         </Typography>
       </Box>
+
+      <Fab aria-label="add" className='infoBtn' onClick={instuctClickOpen}>
+          <InfoIcon className="add-icon" style={{  fill: "#000000" }}  />
+      </Fab>
 
       <Box paddingTop={5} >  
         <Container maxWidth="md" maxHeight={100}>
@@ -67,8 +83,6 @@ const ChordRec = () => {
               controls
               
             />
-           
-          
           
           </div>
         </Container>
@@ -77,11 +91,32 @@ const ChordRec = () => {
       {/* <Box className='playerBox'>
         <AudioPlayer />
       </Box> */}
+    {/* POPUP START */}
+    <Dialog
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="alert-dialog-title"
+        aria-describedby="alert-dialog-description"
+        sx={{
+          maxWidth: 'xs',
+          '& .MuiDialog-paper': { borderRadius: 3, width: '60%', p: '3% 1% 3% 1%'}
+        }}>
+      
+        <DialogActions >
+          <Button className='songButton' sx={{borderRadius:3}} onClick={handleClose}>
+            NEW SONG
+          </Button>
+          <Button className='songButton' sx={{borderRadius:3}} onClick={handleClose}>
+            CURRENT SONG
+          </Button>
+        </DialogActions>
+      </Dialog>
+    {/* POP UP END */}
 
     {/* POPUP START */}
       <Dialog
-        open={open}
-        onClose={handleClose}
+        open={openinstruct}
+        onClose={instructClose}
         aria-labelledby="alert-dialog-title"
         aria-describedby="alert-dialog-description"
         sx={{
@@ -93,11 +128,11 @@ const ChordRec = () => {
         </DialogTitle>
         <DialogContent>
           <DialogContentText textAlign={'center'} >
-            Follow the chords
+            Play along with the song! Our AI will tell you if you need to adjust your sound. Feel free to slow the song down too!
           </DialogContentText>
         </DialogContent>
         <DialogActions >
-          <Button className='okButton' sx={{borderRadius:3}} onClick={handleClose}>
+          <Button className='okButton' sx={{borderRadius:3}} onClick={instructClose}>
             OK
           </Button>
         </DialogActions>
