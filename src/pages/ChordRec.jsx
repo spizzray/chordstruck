@@ -16,7 +16,8 @@ import ReactPlayer from "react-player";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 
-import mp3 from "./Wonderwall.mp3";
+// import mp3 from "public/Wonderwall.mp3";
+// import mp4 from "./chords.mp4";
 
 const useStyles = makeStyles({
   playerWrapper: {
@@ -29,7 +30,15 @@ const useStyles = makeStyles({
 const ChordRec = () => {
   const classes = useStyles();
 
+  // const [videoFilePath, setVideoFilePath] = useState(null);
+  // const handleVideoUpload = (event) => {
+  //   setVideoFilePath(URL.createObjectURL(event.target.files[0]));
+  //   };
+  
+  // <input type="./chords.mp4" onChange={handleVideoUpload} />
+
   const [open, setOpen] = useState(true);
+  const[playing] = useState(false)
   const handleClickOpen = () => {
     setOpen(true);
   };
@@ -37,6 +46,7 @@ const ChordRec = () => {
   const handleClose = () => {
     setOpen(false);
   };
+
 
   return (
     <div >
@@ -46,24 +56,27 @@ const ChordRec = () => {
         </Typography>
       </Box>
 
-      <Box >  
+      <Box paddingTop={5} >  
         <Container maxWidth="md" maxHeight={100}>
           <div className={classes.playerWrapper}>
             <ReactPlayer
               width={"100%"}
               height="100%"
-              url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
-              muted={true}
-              playing={false}
+              url="chordz.mp4"
+              muted={false}
+              controls
+              
             />
+           
+          
           
           </div>
         </Container>
       </Box>
 
-      <Box className='playerBox'>
+      {/* <Box className='playerBox'>
         <AudioPlayer />
-      </Box>
+      </Box> */}
 
     {/* POPUP START */}
       <Dialog
@@ -99,7 +112,7 @@ class AudioPlayer extends React.Component {
     return (
       <div >
         <Box marginTop='0%' >
-          <audio className="player"  ref="audio_tag" src={mp3} controls  />
+          <audio className="player"  ref="audio_tag" src="Wonderwall.mp3" controls preload="auto|metadata|none" />
         </Box>
       </div>
     );

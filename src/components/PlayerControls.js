@@ -4,7 +4,6 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
-import BookmarkIcon from "@material-ui/icons/Bookmark";
 import IconButton from "@material-ui/core/IconButton";
 import FastRewindIcon from "@material-ui/icons/FastRewind";
 import FastForwardIcon from "@material-ui/icons/FastForward";
@@ -114,21 +113,9 @@ export default () => {
         justify="space-between"
         style={{ padding: 16 }}
       >
-        <Grid item>
-          <Typography variant="h5" style={{ color: "#fff" }}>
-            Video Title
-          </Typography>
-        </Grid>
+        
 
-        <Grid item>
-          <Button
-            variant="contained"
-            color="primary"
-            startIcon={<BookmarkIcon />}
-          >
-            Bookmark
-          </Button>
-        </Grid>
+       
       </Grid>
 
       {/* middle controls */}
