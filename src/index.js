@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
 import Home from "./pages/Home";
 import ChordRec from "./pages/ChordRec";
-import Settings from "./pages/Settings";
+import Settings from "./pages/Settings/Settings";
 import { ThemeProvider, createTheme, StyledEngineProvider } from '@mui/material/styles';
 import "./App.css";
 
