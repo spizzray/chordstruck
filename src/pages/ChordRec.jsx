@@ -66,7 +66,7 @@ const ChordRec = () => {
     <div >
       <Box className='songTitle' >
         <Typography  variant="h5" >
-          WONDERWALL BY OASIS
+          PERFECT BY ED SHEERAN
         </Typography>
       </Box>
 
