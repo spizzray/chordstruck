@@ -65,6 +65,32 @@ export default function Basics() {
                     </div>
                 </Container>
             </Box>
+
+            {/* POPUP START */}
+            <Dialog
+                open={open}
+                onClose={handleClose}
+                aria-labelledby="alert-dialog-title"
+                aria-describedby="alert-dialog-description"
+                sx={{
+                maxWidth: 'xs',
+                '& .MuiDialog-paper': { borderRadius: 3, width: '60%', maxHeight: 435 }
+                }}>
+                <DialogTitle textAlign={'center'} variant="h5" color="#000000" component="div" sx={{ fontWeight: 'bold', pt: '5%', textTransform: "uppercase" }}>
+                INSTRUCTIONS
+                </DialogTitle>
+                <DialogContent>
+                <DialogContentText textAlign={'center'} >
+                    Learn some basic chords. Feel free to pause the lesson to get a better look at the finger placement!
+                </DialogContentText>
+                </DialogContent>
+                <DialogActions >
+                <Button className='okButton' sx={{borderRadius:3}} onClick={handleClose}>
+                    OK
+                </Button>
+                </DialogActions>
+            </Dialog>
+        
         </div>
     )
 }
