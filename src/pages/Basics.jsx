@@ -34,6 +34,7 @@ const useStyles = makeStyles({
   });
 
 export default function Basics() {
+    let navigate = useNavigate();
     const classes = useStyles();
     const [open, setOpen] = useState(true);
     const handleClickOpen = () => {
@@ -76,6 +77,14 @@ export default function Basics() {
                 maxWidth: 'xs',
                 '& .MuiDialog-paper': { borderRadius: 3, width: '60%', maxHeight: 435 }
                 }}>
+                <Button variant="text" size="small" textalign='left' sx={{ paddingRight: '80%', pt:"3%" }} onClick={() => {
+                    navigate(-1);
+                }}>
+                    <ArrowBackIosIcon sx={{ color: "#000000" }} />
+                    <Typography className='backBtn' variant="button" fontSize='15' fontWeight='900' >
+                    BACK
+                    </Typography>
+                </Button>
                 <DialogTitle textAlign={'center'} variant="h5" color="#000000" component="div" sx={{ fontWeight: 'bold', pt: '5%', textTransform: "uppercase" }}>
                 INSTRUCTIONS
                 </DialogTitle>
