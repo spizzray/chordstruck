@@ -5,6 +5,7 @@ import Layout from "./Layout";
 import Home from "./pages/Home";
 import ChordRec from "./pages/ChordRec";
 import Settings from "./pages/Settings/Settings";
+import Basics from "./pages/Basics";
 import { ThemeProvider, createTheme, StyledEngineProvider } from '@mui/material/styles';
 import "./App.css";
 
@@ -26,6 +27,7 @@ export default function App() {
               <Route path="/" element={<Layout />}>
                 <Route index element={<Home />} />
                 
+                <Route path="basics" element={<Basics />} />
                 <Route path="chordRec" element={<ChordRec />} />
                 <Route path="settings" element={<Settings />} />
                 

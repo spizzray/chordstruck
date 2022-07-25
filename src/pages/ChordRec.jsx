@@ -20,7 +20,6 @@ import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ReactPlayer from "react-player";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
-import { padding } from "@mui/system";
 
 // import mp3 from "public/Wonderwall.mp3";
 // import mp4 from "./chords.mp4";
@@ -75,13 +74,13 @@ const ChordRec = () => {
           <InfoIcon className="add-icon" style={{  fill: "#000000" }}  />
       </Fab>
 
-      <Box paddingTop={5} >  
+      <Box paddingTop={1} >  
         <Container maxWidth="md" maxHeight={100}>
           <div className={classes.playerWrapper}>
             <ReactPlayer
               width={"100%"}
               height="100%"
-              url="chordz.mp4"
+              url="iteration2.mp4"
               muted={false}
               controls
               

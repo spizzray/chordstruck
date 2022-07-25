@@ -22,7 +22,7 @@ const Home = () => {
                 }}>
                 <Box justifyContent="space-between" sx={{ display: 'flex', m: '10% 1% 1% 1%' }}>
                                     
-                    <Button className='bigHomeBtn'>
+                    <Button className='bigHomeBtn' onClick={() => {navigate('/basics')}} >
                         BASICS
                     </Button>
 
