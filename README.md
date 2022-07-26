@@ -3,9 +3,13 @@ Whenever recloned, ensure files match those of the react branch and not the main
 Then run the following code:
 
 npm config set legacy-peer-deps true 
+
 npm install @material-ui/core
+
 npm install
+
 npm install material-ui-audio-player
+
 npm install react-player
 
 npm start
