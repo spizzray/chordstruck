@@ -33,17 +33,19 @@ const Settings = () => {
                 SETTINGS
             </Typography>
 
-            <Box paddingTop={1} width={500}>
-                <Button className='settingBtn'>
-                    CONNECT TO CLOUD
-                </Button>
-                <Button className='settingBtn'>
-                    LANGUAGE
-                </Button>
-                <Button className='settingBtn' onClick={handleClickOpen}>
-                    FEEDBACK
-                </Button>
-            </Box>
+           
+            <Button className='settingBtn'>
+                CONNECT TO CLOUD
+            </Button>
+
+            <Button className='settingBtn'>
+                LANGUAGE
+            </Button>
+            
+            <Button className='settingBtn' onClick={handleClickOpen}>
+                FEEDBACK
+            </Button>
+        
 
             <Dialog
             open={open}
