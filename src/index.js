@@ -3,9 +3,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Layout from "./Layout";
 import Home from "./pages/Home";
-import ChordRec from "./pages/ChordRec";
+import ChordRec from "./pages/ChordRec/ChordRec";
 import Settings from "./pages/Settings/Settings";
 import Basics from "./pages/Basics";
+import Tuning from "./pages/Tuning";
 import { ThemeProvider, createTheme, StyledEngineProvider } from '@mui/material/styles';
 import "./App.css";
 
@@ -26,7 +27,7 @@ export default function App() {
             <Routes>
               <Route path="/" element={<Layout />}>
                 <Route index element={<Home />} />
-                
+                <Route path="tuning" element={<Tuning />} />
                 <Route path="basics" element={<Basics />} />
                 <Route path="chordRec" element={<ChordRec />} />
                 <Route path="settings" element={<Settings />} />

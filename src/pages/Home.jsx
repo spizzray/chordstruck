@@ -6,6 +6,7 @@ import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
+import Tuning from "./Tuning"
 
 
 const Home = () => {
@@ -30,13 +31,14 @@ const Home = () => {
                         LEARN A SONG
                     </Button>
 
-                    <Button className="bigHomeBtn" >
+                    <Button className="bigHomeBtn" onClick={() => {navigate('/tuning')}}  >
                        TUNING
                     </Button>
 
                     <Button className="bigHomeBtn" onClick={() => {navigate('/settings')}} >
                         SETTINGS
                     </Button>
+                    
                 </Box>
             </Box>
         </div>

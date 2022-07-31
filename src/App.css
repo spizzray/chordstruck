@@ -7,24 +7,36 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  color: #ffffff;
-  font-weight: bold;
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Lato", sans-serif;
 }
 
-.songTitle {
-  color: rgb(230, 230, 230);
+h1,
+h2,
+h3 {
+	color: rgb(54, 54, 54);
+}
+
+h3,
+h4 {
+	font-weight: 400;
+	color: rgb(100, 100, 100);
+}
+
+
+.libraryTitle {
+  color: #ffffff;
   display: flex;
   margin: auto;
-  padding: 2% 15% 2% 15%;
-  margin-top: 1%;
-  justify-content: center;
-  border-radius: 10px;
+  padding: 1rem 1rem 1rem 1rem;
   flex-direction: column;
-  align-items: center;
-  background-color:#212527;
-  width: 330px;
-  
+  align-items: left;
+  background-color:#8f83a5;
 }
 
 .ordinaryTitle {
@@ -43,9 +55,19 @@ a {
   justify-content: center;
   display: flex;
   margin: auto;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+
+.addBtn {
+  color: white;
+  padding-top: 8%;
+  padding-left: 72%;
+  justify-content: right;
+  display: flex;
+  margin: auto;
+  width: auto;
+  font-weight: 600;
 }
 
 .player {
@@ -65,9 +87,52 @@ a {
   background-color: #212527;
 }
 
+.navContainer {
+  min-height: 10vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+  background-color: #ffffff;
+	@media screen and (max-width: 768px) {
+		position: fixed;
+		z-index: 10;
+		top: 0;
+		left: 0;
+		width: 100%;
+}}
+
+.libraryBtn {
+  color: black;
+  font-weight: bold;
+  top: 19px;
+  border: 1.5px solid #000000;
+  background-color: transparent;
+  display: flex;
+  padding: 1.5% 2% 1.5% 2%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  right: -20px;
+}
+
+.speedBtn {
+  color: black;
+  font-weight: bold;
+  border: 1.5px solid #000000;
+  background-color: transparent;
+  display: flex;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 60px;
+}
+
+.libraryBtn:hover {
+  background-color: black;
+  color: white;
+}
+
 .homeBtn {
   position: fixed;
-  border: 1px solid #000000;
+  border: 1px solid #626262;
   top: 15px;
   right: 0px;
   transform: translateX(-30%);
@@ -76,7 +141,16 @@ a {
 
 .infoBtn {
   position: fixed;
-  border: 1px solid #000000;
+  border: 1px solid #626262;
+  top: 15px;
+  right: 0px;
+  transform: translateX(-160%);
+  background-color: #ffffff;
+}
+
+.soundBtn {
+  position: fixed;
+  border: 1px solid #626262;
   top: 15px;
   right: 0px;
   transform: translateX(-160%);
@@ -84,7 +158,6 @@ a {
 }
 
 .settingBtn {
-  justify-content: space-between;
   display: flex;
   font-weight: bold;
   font-size: 1.4em;
@@ -102,18 +175,18 @@ a {
   flex-direction: column;
 }
 
+.centerImage {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .createBtn:hover {
   background-color: #ffffff;
 }
 
-.soundBtn {
-  position: fixed;
-  border: 1px solid #000000;
-  top: 15px;
-  right: 0px;
-  transform: translateX(-160%);
-  background-color: #ffffff;
-}
 
 @media (min-width: 600px) {
   .createBtn {
@@ -134,7 +207,7 @@ a {
 }
 
 .notifications-icon {
-  color: #D22108;
+  color: #d3c2f4;
   width: 10px;
   top: 0;
   display: block;
@@ -164,7 +237,7 @@ a {
   /* number of lines to show */
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
-  color: #D22108;
+  color: #79708b;
   font-weight: bold;
   font-size: 1.4em;
   margin-top: 10px;
@@ -225,7 +298,7 @@ a {
   display: flex;
   margin: auto;
   padding: 2% 20% 2% 20%;
-  margin-bottom: 2%;
+  margin-bottom: 1.5%;
 
 }
 
@@ -246,7 +319,7 @@ a {
   align-items: center;
   border: solid #FFF3F3;
   background-color: #FFF3F3;
-  color: #D22108;
+  color: #8f83a5;
   border-radius: 20px;
   width: fit-content;
 }

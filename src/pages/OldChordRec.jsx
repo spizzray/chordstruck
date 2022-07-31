@@ -22,7 +22,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 
 // import mp3 from "public/Wonderwall.mp3";
-// import mp4 from "./chords.mp4";
+import mp4 from "./chordbasicb.mp4";
 
 const useStyles = makeStyles({
   playerWrapper: {
@@ -80,7 +80,7 @@ const ChordRec = () => {
             <ReactPlayer
               width={"100%"}
               height="100%"
-              url="iteration2.mp4"
+              url={mp4}
               muted={false}
               controls
               

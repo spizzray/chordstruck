@@ -43,11 +43,11 @@ function Navbar() {
   return (
     <div>
       <Fab aria-label="add" className='homeBtn' onClick={() => {navigate('/')}}>
-          <HomeIcon className="add-icon" style={{  fill: "#000000" }} />
+          <HomeIcon className="add-icon" style={{  fill: "#8f83a5" }} />
       </Fab>
 
       <Fab aria-label="add" className='soundBtn'>
-          <VolumeUpIcon className="add-icon" style={{ fill: "#000000" }} />
+          <VolumeUpIcon className="add-icon" style={{ fill: "#8f83a5" }} />
       </Fab>
 
       {/* <AppBar position="static">
