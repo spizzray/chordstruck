@@ -12,7 +12,9 @@ Chordstruck
 Learning an instrument for the first time is never an easy feat and with each instrument comes a different set of problems that beginners would face. While there are many resources out there for beginners to learn an instrument, it often feels as though there is no one main resource to turn to when learning, especially when you are not sure whether you’re playing it correctly. Apart from this, we often find that apps like SimplyGuitar have in-app purchases and requires payment in order to unlock all of their features. As such, we would like to redesign the way people learn an instrument, by providing them with accessible key resources to allow for steady improvements. Our focus is on young adults (a bigger percentage of whom indicate an interest in learning to play a musical instrument).
 
 # Solution
-Our project involves redesigning a music learning app, focusing on specifically the guitar. Our progressive web app makes use of React, Ruby, Javascript, Material UI and Netlify, and is compatible on mobile phones and computers. Click here to try the app out on your own screen: https://chordstruck.netlify.app/ 
+Our project involves redesigning a music learning app, focusing on specifically the guitar. Our progressive web app makes use of React, Ruby, Javascript, Material UI and Netlify, and is compatible on mobile phones and computers. 
+
+Click here to try the app out on your own screen: https://chordstruck.netlify.app/ 
 
 Here are some of the features of our app:
 - Chord recognition & tuning: If the sound recognition can identify different chords, this would help solve chord recognition for identifying different songs, as well as tuning 
