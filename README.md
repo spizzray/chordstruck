@@ -27,12 +27,12 @@ Here are some of the features of our app:
         npm config set legacy-peer-deps true 
         npm install @material-ui/core
         npm install react-player
-        npm i styled-components       
+        npm i styled-components
         npm install react-countdown-clock
         npm install
         npm start
 
 # Credits
-ML model: 
-Basic music player design: Wilson from https://github.com/WilsonLe/react-music-player
-Guitar chord diagrams: https://toneisland.com/easy-guitar-chords/
+- ML model: 
+- Basic music player design: Wilson from https://github.com/WilsonLe/react-music-player
+- Guitar chord diagrams: https://toneisland.com/easy-guitar-chords/
