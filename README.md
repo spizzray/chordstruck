@@ -1,9 +1,9 @@
 # Project done by: Group 2
-Aster Angelic Leong, 1005493
-Chua Po Siang Bridget, 1005615
-Claire Oudea Gan Li, 1005492
-Raymond Harrison, 1005329
-Tan Kang Min, 1005483
+- Aster Angelic Leong, 1005493
+- Chua Po Siang Bridget, 1005615
+- Claire Oudea Gan Li, 1005492
+- Raymond Harrison, 1005329
+- Tan Kang Min, 1005483
 
 # Project Title
 Chordstruck
@@ -24,7 +24,7 @@ Here are some of the features of our app:
 1. Clone our github repository by copying the url into your text editor and doing a 'git clone'.
 2. Whenever recloned, ensure files match those of the react branch and not the main branch. Also ensure that you delete the file browserslist if it is there. 
 3. Then run the following code:
-        npm config set legacy-peer-deps true 
+    npm config set legacy-peer-deps true 
 npm install @material-ui/core
 npm install react-player
 npm i styled-components
