@@ -25,12 +25,12 @@ Here are some of the features of our app:
 2. Whenever recloned, ensure files match those of the react branch and not the main branch. Also ensure that you delete the file browserslist if it is there. 
 3. Then run the following code:
         npm config set legacy-peer-deps true 
-        npm install @material-ui/core
-        npm install react-player
-        npm i styled-components
-        npm install react-countdown-clock
-        npm install
-        npm start
+npm install @material-ui/core
+npm install react-player
+npm i styled-components
+npm install react-countdown-clock
+npm install
+npm start
 
 # Credits
 - ML model: 
