@@ -56,7 +56,7 @@ const ChordRec = () => {
 	const audioRef = useRef(null);
 
 	// State
-	const [songs, setSongs] = useState(data());
+	const [songs, setSongs] = useState(data(0));
 	const [currentSong, setCurrentSong] = useState(songs[0]);
 	const [isPlaying, setIsPlaying] = useState(false);
 	const [libraryStatus, setLibraryStatus] = useState(false);
@@ -64,6 +64,17 @@ const ChordRec = () => {
 		currentTime: 0,
 		duration: 0,
 	});
+
+  // console.log(songs[0])
+  // Claire is awesome 
+
+  setInterval(() => {
+    setCurrentSong(data(audioRef.current.currentTime)[0])
+  }, 100
+  )
+
+  // Really Claire is awesome :D 
+
 
 	// Functions
 	const updateTimeHandler = (e) => {
