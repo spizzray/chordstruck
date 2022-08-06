@@ -9,9 +9,9 @@ import Cmajor from './assets/Chords/C-major.png';
 import Perfect from './assets/Songs/Perfect.mp3';
 
 
+
 export default function ChillHop(time) {
-	// ALL CHORDS IN THE SONG
-	let types = ['Ab:maj', 'F:min', 'Db:maj', 'Eb:maj', 'C:min' ]
+
 	// LINK CHORDS TO THE CHORD DIAGRAMS
 	const chordType = {
 		'Ab:maj': Aminor7,
@@ -21,53 +21,14 @@ export default function ChillHop(time) {
 		'C:min': Cmajor, //temporary until i find the correct chord diagram
 	}
 
-	// const [currentIndex, setCurrentIndex] = useState(0);
-
-    // useEffect(() => {
-    //     const intervalId = setInterval(() => {
-    //         if(currentIndex === chordtype.length - 1) {
-    //             setCurrentIndex(0);
-    //         } 
-    //         else {
-    //              setCurrentIndex(currentIndex + 1);
-    //         }
-    //     }, 5000)
-        
-    //     return () => clearInterval(intervalId);
-    // }, [])
-
-
-	// const getTime = (time) => {
-	// 	let minute = Math.floor(time / 60);
-	// 	let second = ("0" + Math.floor(time % 60)).slice(-2);
-	// 	return `${minute}.${second}`;
-	// };
-
-	// const period = ({ currentSong, songInfo }) => {
-	// 	return (
-	// 		getTime(songInfo.currentTime)
-	// 	);
-	// };
-
-	// let len = MLdata.length
-	// const display = MLdata.map((start, end, chord) => {
-	// 	for (let n=0; n<len(MLdata); n++) {
-	// 		if (start <= getTime) {
-	// 			return (
-	// 				MLdata[n].chord
-	// 			); 
-	// 		};
-	// 	console.log(n)	
-	// 	};	
-	// })
-	let currentChord = ""
+	let currentChord = MLdata[0][2]
 	let nextChord = ""
-	let pastChord = MLdata[0][2]
+	let pastChord = ""
 	for (let n=0; n<MLdata.length; n++) {
 		if (MLdata[n][0] <= time) {
 			currentChord = MLdata[n][2]
-			// pastChord = MLdata[n-1][2]
 			nextChord = MLdata[n+1][2]
+			// pastChord = MLdata[n-1][2]
 		};
 	}
 	// console.log(nextChord)
@@ -86,57 +47,17 @@ export default function ChillHop(time) {
 			id: uuidv4(),
 			active: true,
 		},
-		{
-			name: "Daylight",
-			cover:
-				"https://chillhop.com/wp-content/uploads/2020/07/ef95e219a44869318b7806e9f0f794a1f9c451e4-1024x1024.jpg",
-			artist: "Aiguille",
-			audio: "https://mp3.chillhop.com/serve.php/?mp3=9272",
-			color: ["#EF8EA9", "#ab417f"],
-			id: uuidv4(),
-			active: false,
-		},
-		{
-			name: "Keep Going",
-			cover:
-				"https://chillhop.com/wp-content/uploads/2020/07/ff35dede32321a8aa0953809812941bcf8a6bd35-1024x1024.jpg",
-			artist: "Swørn",
-			audio: "https://mp3.chillhop.com/serve.php/?mp3=9222",
-			color: ["#CD607D", "#c94043"],
-			id: uuidv4(),
-			active: false,
-		},
-		{
-			name: "Nightfall",
-			cover:
-				"https://chillhop.com/wp-content/uploads/2020/07/ef95e219a44869318b7806e9f0f794a1f9c451e4-1024x1024.jpg",
-			artist: "Aiguille",
-			audio: "https://mp3.chillhop.com/serve.php/?mp3=9148",
-			color: ["#EF8EA9", "#ab417f"],
-			id: uuidv4(),
-			active: false,
-		},
-		{
-			name: "Reflection",
-			cover:
-				"https://chillhop.com/wp-content/uploads/2020/07/ff35dede32321a8aa0953809812941bcf8a6bd35-1024x1024.jpg",
-			artist: "Swørn",
-			audio: "https://mp3.chillhop.com/serve.php/?mp3=9228",
-			color: ["#CD607D", "#c94043"],
-			id: uuidv4(),
-			active: false,
-		},
-		{
-			name: "Under the City Stars",
-			cover:
-				"https://chillhop.com/wp-content/uploads/2020/09/0255e8b8c74c90d4a27c594b3452b2daafae608d-1024x1024.jpg",
-			artist: "Aso, Middle School, Aviino",
-			audio: "https://mp3.chillhop.com/serve.php/?mp3=10074",
-			color: ["#205950", "#2ab3bf"],
-			id: uuidv4(),
-			active: false,
-		},
-		//ADD MORE HERE
+		// {
+		// 	name: "Daylight",
+		// 	cover:
+		// 		"https://chillhop.com/wp-content/uploads/2020/07/ef95e219a44869318b7806e9f0f794a1f9c451e4-1024x1024.jpg",
+		// 	artist: "Aiguille",
+		// 	audio: "https://mp3.chillhop.com/serve.php/?mp3=9272",
+		// 	color: ["#EF8EA9", "#ab417f"],
+		// 	id: uuidv4(),
+		// 	active: false,
+		// },
+		
 	];
 	
 }

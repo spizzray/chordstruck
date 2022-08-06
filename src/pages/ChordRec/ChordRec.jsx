@@ -70,7 +70,7 @@ const ChordRec = () => {
 
   setInterval(() => {
     setCurrentSong(data(audioRef.current.currentTime)[0])
-  }, 500
+  }, 1000
   )
 
   // Really Claire is awesome :D 
