@@ -1,15 +1,32 @@
 import React from "react";
 import styled from "styled-components";
 import Typography from '@material-ui/core/Typography';
+import ImageList from '@mui/material/ImageList';
+import ImageListItem from '@mui/material/ImageListItem';
+
 
 const Song = ({ currentSong }) => {
-	return (
-		<SongContainer>
-			<Img src={currentSong.image} alt={currentSong.name}></Img>
+	const arrayImage=[ currentSong.image, currentSong.imageN ]
+		return (
+			<SongContainer>
+			
+				<ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
+				{arrayImage.map((image) => (
+				<ImageListItem >
+					<img
+					src={image} 
+					alt={currentSong.name}
+					loading="lazy"
+					/>
+				</ImageListItem>
+				))}
+				</ImageList>
+
 			<Typography>{currentSong.name}, {currentSong.artist}</Typography>
-		</SongContainer>
-	);
+			</SongContainer>
+		)
 };
+
 
 const SongContainer = styled.div`
 	margin-top: 1vh;
@@ -23,18 +40,13 @@ const SongContainer = styled.div`
 
 const Img = styled.img`
 	width: 17%;
+	display: flex;
+	flex-direction: row;
 	border-radius: 10%;
 	@media screen and (max-width: 768px) {
-		width: 50%;
+		width: 100%;
 	}
 `;
 
-const H1 = styled.h2`
-	padding: 10px 1px 10px 1px;
-`;
-
-const H2 = styled.h3`
-	font-size: 1rem;
-`;
 
 export default Song;

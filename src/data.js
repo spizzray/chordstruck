@@ -1,11 +1,12 @@
 import { v4 as uuidv4 } from "uuid";
-import React, { useState, useEffect } from "react";
 
 import Aminor7 from './assets/Chords/Aminor7.png';
 import Amajor from './assets/Chords/Amajor.png';
 import Dmajor6 from './assets/Chords/Dmajor6.png';
 import Eminor from './assets/Chords/Eminor.png';
 import Cmajor from './assets/Chords/C-major.png';
+
+import Perfect from './assets/Songs/Perfect.mp3';
 
 
 export default function ChillHop(time) {
@@ -60,12 +61,16 @@ export default function ChillHop(time) {
 	// 	};	
 	// })
 	let currentChord = ""
+	let nextChord = ""
+	let pastChord = MLdata[0][2]
 	for (let n=0; n<MLdata.length; n++) {
 		if (MLdata[n][0] <= time) {
 			currentChord = MLdata[n][2]
+			// pastChord = MLdata[n-1][2]
+			nextChord = MLdata[n+1][2]
 		};
 	}
-	// console.log(currentChord)
+	// console.log(nextChord)
 	
 
 	return [	
@@ -73,8 +78,10 @@ export default function ChillHop(time) {
 			name: "Perfect",
 			cover: "https://chillhop.com/wp-content/uploads/2020/07/ef95e219a44869318b7806e9f0f794a1f9c451e4-1024x1024.jpg",
 			image: chordType[currentChord],
+			imageP: chordType[pastChord],
+			imageN: chordType[nextChord],
 			artist: "Ed Sheeran",
-			audio: "https://mp3.chillhop.com/serve.php/?mp3=10075",
+			audio: Perfect,
 			color: ["#205950", "#2ab3bf"],
 			id: uuidv4(),
 			active: true,
