@@ -58,7 +58,7 @@ export default function ChillHop() {
 			{
 				name: "Perfect",
 				cover: "https://chillhop.com/wp-content/uploads/2020/07/ef95e219a44869318b7806e9f0f794a1f9c451e4-1024x1024.jpg",
-				image: chordtype["E:min", "A:min7"],
+				image: chordtype["Ab:maj"],
 				artist: "Ed Sheeran",
 				audio: "https://mp3.chillhop.com/serve.php/?mp3=10075",
 				color: ["#205950", "#2ab3bf"],
