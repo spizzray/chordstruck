@@ -1,26 +1,30 @@
 import React from "react";
 import styled from "styled-components";
 import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
+import Grid from '@material-ui/core/Grid';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
+import ImageListItemBar from '@mui/material/ImageListItemBar';
 
 
 const Song = ({ currentSong }) => {
 	const arrayImage=[ currentSong.image, currentSong.imageN ]
 		return (
 			<SongContainer>
-				<Typography sx={{ letterSpacing: 10 }}> CURRENT    |     NEXT </Typography>
-				<ImageList sx={{ paddingLeft: 18, width: 500, height: 550 }} cols={3} gap={17}  rowHeight={164}>
-				{arrayImage.map((image) => (
-				<ImageListItem >
-					<img
-					src={image} 
-					alt={currentSong.name}
-					loading="lazy"
-					/>
-				</ImageListItem>
-				))}
+				<Grid container style={{justifyContent:'center', columnGap:90, paddingBottom:10}} >
+					<Typography  className="space">Current</Typography>	
+					<Typography  className="space"> Next </Typography>
+				</Grid> 
+				<ImageList sx={{ width: 320, height:215, overflow:"hidden"}} cols={2} gap={17}  rowHeight={"auto"}>
+					{arrayImage.map((image) => (
+					<ImageListItem >
+						<img
+						src={image} 
+						alt={currentSong.name}
+						loading="lazy"
+						/>
+					</ImageListItem>
+					))}
 				</ImageList>
 				
 				<Typography>{currentSong.name}, {currentSong.artist}</Typography>
@@ -30,9 +34,8 @@ const Song = ({ currentSong }) => {
 
 
 const SongContainer = styled.div`
-	margin-top: 1vh;
-	min-height: 50vh;
-	max-height: 60vh;
+	margin-top: -10px;
+	max-height: 800px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;

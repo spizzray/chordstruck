@@ -254,8 +254,8 @@ const Player = ({
 };
 
 const PlayerContainer = styled.div`
-	min-height: 10vh;
-    margin-top: -20px;
+	min-height: 15vh;
+    margin-top: -5px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -263,7 +263,7 @@ const PlayerContainer = styled.div`
 `;
 
 const TimeControlContainer = styled.div`
-	margin-top: 6vh;
+	margin-top: 2vh;
 	width: 60%;
 	display: flex;
 	@media screen and (max-width: 768px) {
@@ -342,7 +342,7 @@ const PlayControlContainer = styled.div`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 10px 1rem 1rem 1rem;
+	padding: 6px 1rem 1rem 1rem;
 	width: 50%;
 	@media screen and (max-width: 768px) {
 		width: 60%;

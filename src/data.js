@@ -23,7 +23,7 @@ export default function ChillHop(time) {
 
 	let currentChord = MLdata[0][2]
 	let nextChord = ""
-	let pastChord = ""
+	// let pastChord = ""
 	for (let n=0; n<MLdata.length; n++) {
 		if (MLdata[n][0] <= time) {
 			currentChord = MLdata[n][2]
@@ -39,7 +39,6 @@ export default function ChillHop(time) {
 			name: "Perfect",
 			cover: "https://chillhop.com/wp-content/uploads/2020/07/ef95e219a44869318b7806e9f0f794a1f9c451e4-1024x1024.jpg",
 			image: chordType[currentChord],
-			imageP: chordType[pastChord],
 			imageN: chordType[nextChord],
 			artist: "Ed Sheeran",
 			audio: Perfect,
