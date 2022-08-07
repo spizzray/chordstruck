@@ -49,11 +49,11 @@ h4 {
 }
 
 .container {
-  background-color: #ffffff;
-  color: #8f83a5;
+  background-color: transparent;
+  color: transparent;
   border-radius: 10px;
   display: flex;
-  margin-top: 0%;
+  margin-top: 3%;
   width: 600px;
   vertical-align: middle;
   align-content:center;

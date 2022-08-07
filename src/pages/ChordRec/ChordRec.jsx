@@ -148,35 +148,6 @@ const ChordRec = () => {
 			/>
 		</AppContainer>      
 
-      <Dialog
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="alert-dialog-title"
-        aria-describedby="alert-dialog-description"
-        sx={{
-          maxWidth: 'xs',
-          '& .MuiDialog-paper': { borderRadius: 3, width: '60%', p: '1% 1% 3% 1%'}
-        }}>
-        <DialogActions>
-          <Button variant="text" size="small" textalign='left' sx={{ paddingRight: '80%' }} onClick={() => {
-            navigate(-1);
-          }}>
-            <ArrowBackIosIcon sx={{ color: "#000000" }} />
-            <Typography className='backBtn' variant="button" fontSize='15' fontWeight='900' >
-              BACK
-            </Typography>
-          </Button>
-        </DialogActions>
-        <DialogActions >
-          <Button className='songButton' sx={{borderRadius:3}} onClick={handleClose}>
-            NEW SONG
-          </Button>
-          <Button className='songButton' sx={{borderRadius:3}} onClick={handleClose}>
-            CURRENT SONG
-          </Button>
-        </DialogActions>
-      </Dialog>
-    {/* POP UP END */}
 
     {/* POPUP START */}
       <Dialog

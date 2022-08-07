@@ -2,13 +2,26 @@ import { useEffect, useState } from "react";
 import Typography from '@material-ui/core/Typography';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
+import Fab from '@mui/material/Fab';
 import AudioContext from "./contexts/AudioContext";
+import Box from '@mui/material/Box';
 import autoCorrelate from "./libs/AutoCorrelate";
 import {
   noteFromPitch,
   centsOffFromPitch,
   getDetunePercent,
 } from "./libs/Helpers";
+
+import guitarChords from "./guitarChords.jpeg";
+
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import DialogContent from '@mui/material/DialogContent';
+import DialogContentText from '@mui/material/DialogContentText';
+import DialogTitle from '@mui/material/DialogTitle';
+
+//import ICONS
+import InfoIcon from '@mui/icons-material/Info';
 
 const audioCtx = AudioContext.getAudioContext();
 const analyserNode = AudioContext.getAnalyser();
@@ -55,6 +68,14 @@ function Tuning() {
       console.log(note, sym, scl, dtune, ac);
     }
   };
+  const [open, setOpen] = useState(false);
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
 
   useEffect(() => {
     if (source != null) {
@@ -94,6 +115,10 @@ function Tuning() {
 
   return (
     <div >
+       <Fab aria-label="add" className='infoBtn' onClick={handleClickOpen}>
+          <InfoIcon className="add-icon" style={{  fill: "#8f83a5" }}  />
+      </Fab>
+      
       <Container className="container">
       <div className="ordinaryTitle">
         <div
@@ -114,12 +139,12 @@ function Tuning() {
               >
                 {pitchNote}
               </Typography>
-              <Typography className="chordTitle" style={{fontSize:30}}>
+              <span className="bg-green-600 p-1 px-2 text-white rounded-lg" style={{fontSize:30}}>
                 {pitchScale}
-              </Typography>
+              </span>
               <div className="w-full flex justify-center items-center">
               <div 
-                className="bg-gradient-to-r to-green-400 from-red-600 py-1 rounded-full rotate-180"
+                className="bg-gradient-to-r to-black-400 from-red-600 py-1 rounded-full rotate-180"
                 style={{
                   width: (detune < 0 ? getDetunePercent(detune) : "50") + "%",
                 }}
@@ -155,6 +180,42 @@ function Tuning() {
         )}
       </div>
       </Container>
+
+      <Dialog
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="alert-dialog-title"
+        aria-describedby="alert-dialog-description"
+        sx={{
+          maxWidth: 'xs',
+          '& .MuiDialog-paper': { borderRadius: 3, width: '40%', maxHeight: 435 }
+        }}>
+        <DialogTitle textAlign={'center'} variant="h6" color="#000000" component="div" sx={{ fontWeight: 'bold', pt: '4%', pb:'2%', textTransform: "uppercase" }}>
+          GUITAR CHORDS
+        </DialogTitle>
+        <DialogContent>
+          <Box
+            component="img"
+            className='centerImage'
+            sx={{
+              height: 250,
+              width: 350,
+              alignItems:'center',
+              maxHeight: { xs: 233, md: 200 },
+              maxWidth: { xs: 350, md: 250 },
+            }}
+            alt="Guitar Chords info"
+            src={guitarChords}
+          />
+        </DialogContent>
+        <DialogActions >
+          <Button className='okButton' sx={{borderRadius:3}} onClick={handleClose}>
+            OK
+          </Button>
+        </DialogActions>
+      </Dialog>
+    {/* POP UP END */}
+
     </div>
   );
 }
