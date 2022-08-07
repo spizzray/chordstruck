@@ -70,7 +70,7 @@ h4 {
 }
 
 .backBtn {
-  color: rgb(0, 0, 0);
+  color: #8f83a5;
   justify-content: center;
   display: flex;
   margin: auto;
@@ -180,10 +180,10 @@ h4 {
   display: flex;
   font-weight: bold;
   font-size: 1.4em;
-  color: #000000;
-  border: 1px solid #000000;
+  color: #ffffff;
+  border: 1px solid #8f83a5;
   border-radius: 10px;
-  background-color: #ffffff;
+  background-color: #bbaadd;
   padding: 1% 1% 1% 1%;
   margin: auto;
   margin-top: 6px;
@@ -316,7 +316,7 @@ h4 {
 
 .okButton {
   color: white;
-  background-color: #000000;
+  background-color: #8f83a5;
   display: flex;
   margin: auto;
   padding: 2% 20% 2% 20%;

@@ -7,15 +7,15 @@ import { Box, Container, Grid, Button, TextField, FormControl, Select, MenuItem 
 
 export default function FeedbackInput() {
     return (
-      <Box
+      <Box className = "centerImage"
         component="form"
         sx={{
-          '& > :not(style)': { m: 1, width: '450px', p:'1% 1% 1% 7%' },
+          '& > :not(style)': { m: 1, width: '450px', p:'auto', display: 'flex' },
         }}
         noValidate
         autoComplete="off"
       >
-        <TextField id="outlined-basic" variant="outlined" />
+        <TextField id="outlined-basic" variant="outlined" backgroundColor="#ffffff"/>
         
       </Box>
     );

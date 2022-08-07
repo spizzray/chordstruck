@@ -29,7 +29,7 @@ const Settings = () => {
 
     return (
         <div className = "App" >
-            <Typography className='ordinaryTitle' variant="h4"  style={{ fontWeight: '900', color:"#000000", marginTop: '50px'}} >
+            <Typography className='ordinaryTitle' variant="h4"  style={{ fontWeight: '900', color:"#8f83a5", marginTop: '50px'}} >
                 SETTINGS
             </Typography>
 
@@ -60,14 +60,14 @@ const Settings = () => {
                 <Button variant="text" size="small" textalign='left' sx={{ paddingRight: '80%' }} onClick={() => {
                     navigate(-1);
                 }}>
-                    <ArrowBackIosIcon sx={{ color: "#000000" }} />
+                    <ArrowBackIosIcon sx={{ color: "#8f83a5" }} />
                     <Typography className='backBtn' variant="button" fontSize='15' fontWeight='900' >
                     BACK
                     </Typography>
                 </Button>
                 </DialogActions>
 
-                <DialogTitle textAlign={'center'} variant="h6" color="#000000" component="div" sx={{ fontWeight: 'bold', pt: '5%', textTransform: "uppercase" }}>
+                <DialogTitle textAlign={'center'} variant="h6" color="#8f83a5" component="div" sx={{ fontWeight: 'bold', pt: '5%', textTransform: "uppercase" }}>
                     Feedback
                 </DialogTitle>
 

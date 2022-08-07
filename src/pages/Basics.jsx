@@ -49,7 +49,7 @@ export default function Basics() {
         <div >
         
             <Fab aria-label="add" className='infoBtn' onClick={handleClickOpen}>
-            <InfoIcon className="add-icon" style={{  fill: "#000000" }}  />
+            <InfoIcon className="add-icon" style={{  fill: "#8f83a5" }}  />
             </Fab>
         
             <Box  >  
@@ -80,12 +80,12 @@ export default function Basics() {
                 <Button variant="text" size="small" textalign='left' sx={{ paddingRight: '80%', pt:"3%" }} onClick={() => {
                     navigate(-1);
                 }}>
-                    <ArrowBackIosIcon sx={{ color: "#000000" }} />
+                    <ArrowBackIosIcon sx={{ color: "#8f83a5" }} />
                     <Typography className='backBtn' variant="button" fontSize='15' fontWeight='900' >
                     BACK
                     </Typography>
                 </Button>
-                <DialogTitle textAlign={'center'} variant="h5" color="#000000" component="div" sx={{ fontWeight: 'bold', pt: '5%', textTransform: "uppercase" }}>
+                <DialogTitle textAlign={'center'} variant="h5" color="#8f83a5" component="div" sx={{ fontWeight: 'bold', pt: '5%', textTransform: "uppercase" }}>
                 INSTRUCTIONS
                 </DialogTitle>
                 <DialogContent>
