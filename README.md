@@ -33,10 +33,13 @@ npm install react-player
 npm i styled-components
 npm install react-countdown-clock
 npm install
+
+pip install autochord 
+
 npm start
 ```
 
 # Credits
-- ML model: 
+- ML model: https://github.com/cjbayron/autochord
 - Basic music player design: Wilson from https://github.com/WilsonLe/react-music-player
 - Guitar chord diagrams: https://toneisland.com/easy-guitar-chords/

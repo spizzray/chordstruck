@@ -61,6 +61,7 @@ export default function ChillHop(time) {
 	
 }
 
+const MLmodel =[model]
 
 const MLdata = [
 	[0.0, 7.430385487528345, 'Ab:maj'],

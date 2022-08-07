@@ -239,10 +239,10 @@ const Player = ({
 				</DialogContent>
 
 				<DialogActions sx={{ justifyContent :'center', pb: '4%'}} >
-				<ReactCountdownClock seconds={30}
+				<ReactCountdownClock seconds={15}
 						color="#8f83a5"
 						alpha={0.9}
-						size={150}
+						size={130}
 						onComplete={painClose} />
 				</DialogActions>
 			</Dialog>
