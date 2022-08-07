@@ -213,13 +213,16 @@ h4 {
   }
 }
 
+.trans {
+  background-color: transparent;
+}
+
 .bigHomeBtn {
   font-weight: bold;
   font-size: 1.4em;
-  color: #000000;
-  border: 1px solid #000000;
-  border-radius: 300px;
-  background-color: #ffffff;
+  color: white;
+  border-radius: 200px;
+  background-color: #8f83a5;
   margin: 0.5rem;
   width: 200px;
   height:180px;

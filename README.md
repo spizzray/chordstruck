@@ -32,6 +32,7 @@ npm install @material-ui/core
 npm install react-player
 npm i styled-components
 npm install react-countdown-clock
+npm install react-wavify
 npm install
 
 pip install autochord 
