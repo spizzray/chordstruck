@@ -48,6 +48,19 @@ h4 {
   justify-content: center;
 }
 
+.container {
+  background-color: #ffffff;
+  color: #8f83a5;
+  border-radius: 10px;
+  display: flex;
+  margin-top: 0%;
+  width: 600px;
+  vertical-align: middle;
+  align-content:center;
+  align-items: center;
+  justify-content: center;
+}
+
 .libraryTitle {
   color: #ffffff;
   display: flex;
@@ -58,12 +71,29 @@ h4 {
   background-color:#8f83a5;
 }
 
+.chordTitle {
+  color: #ffffff;
+  font-size: larger;
+  display: flex;
+  margin: auto;
+  padding-bottom: 10%;
+  flex-direction: column;
+  background-color: #8f83a5;
+  border-radius: 10px;
+  margin-top: 10%;
+  width: 200px;
+  vertical-align: middle;
+  align-content:center;
+  align-items: center;
+  justify-content: center;
+}
+
 .ordinaryTitle {
   color: rgb(0, 0, 0);
   justify-content: center;
   display: flex;
   margin: auto;
-  padding: 2% 15% 2% 15%;
+  padding: 2% 5% 2% 5%;
   margin-top: 1%;
   flex-direction: column;
   align-items: center;
@@ -233,6 +263,20 @@ h4 {
 
 }
 
+.startBtn {
+  font-weight: bold;
+  font-size: 1.4em;
+  color: #8f83a5;
+  border-radius: 200px;
+  background-color: #ffffff;
+  border: 1px solid #8f83a5;
+  margin: 0.5rem;
+  width: 100px;
+  height:50px;
+}
+.startBtn:hover {
+  background-color: #ffffff;
+}
 
 .add-button {
   position: fixed;

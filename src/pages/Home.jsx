@@ -2,7 +2,7 @@ import React,  { Component } from "react";
 import { useNavigate } from "react-router-dom";
 import Wave from 'react-wavify'
 
-import Typography from '@material-ui/core/Typography';
+
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
