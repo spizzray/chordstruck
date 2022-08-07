@@ -1,21 +1,17 @@
 import React from "react";
 import LibrarySong from "./LibrarySong";
+import FileUpload from "./FileUpload"
 import styled from "styled-components";
 
 import Typography from '@material-ui/core/Typography';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 
-import PlaylistAddRoundedIcon from '@mui/icons-material/PlaylistAddRounded';
-
 const Library = ({ songs, currentSong, setCurrentSong, audioRef, isPlaying, setSongs, libraryStatus }) => {
 	return (
 		<LibraryContainer libraryStatus={libraryStatus}>
 			<Box backgroundColor="#8f83a5" >
-				<Button className = 'addBtn' >
-					<PlaylistAddRoundedIcon color='#ffffff' />
-					Add
-				</Button>
+				<FileUpload/>
 				
 				<Typography className='libraryTitle' style={{fontSize:24, fontWeight:'600'}}>
 					Downloaded

@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 import ChordRec from "./pages/ChordRec/ChordRec";
 import Settings from "./pages/Settings/Settings";
 import Basics from "./pages/Basics";
-import Tuning from "./pages/Tuning";
+import Tuning from "./pages/Tuner/Tuning";
 import { ThemeProvider, createTheme, StyledEngineProvider } from '@mui/material/styles';
 import "./App.css";
 

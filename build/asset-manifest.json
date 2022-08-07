@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bebc398f.css",
+    "main.js": "/static/js/main.e61b6a90.js",
+    "static/media/Perfect.mp3": "/static/media/Perfect.004a488ec97c2da5251f.mp3",
+    "static/media/chordinfo.png": "/static/media/chordinfo.5c4f204d6fb0e39eb17d.png",
+    "static/media/iconbg.png": "/static/media/iconbg.89f5d56f194f36c18619.png",
+    "index.html": "/index.html",
+    "main.bebc398f.css.map": "/static/css/main.bebc398f.css.map",
+    "main.e61b6a90.js.map": "/static/js/main.e61b6a90.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bebc398f.css",
+    "static/js/main.e61b6a90.js"
+  ]
+}

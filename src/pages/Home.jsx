@@ -7,7 +7,7 @@ import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
-import Tuning from "./Tuning";
+import Tuning from "./Tuner/Tuning";
 import iconbg from "../assets/iconbg.png";
 import { display } from "@mui/system";
 

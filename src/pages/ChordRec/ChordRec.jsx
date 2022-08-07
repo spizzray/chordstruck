@@ -66,14 +66,13 @@ const ChordRec = () => {
 	});
 
   // console.log(songs[0])
-  // Claire is awesome 
+
 
   setInterval(() => {
     setCurrentSong(data(audioRef.current.currentTime)[0])
   }, 10000
   )
 
-  // Really Claire is awesome :D 
 
 
 	// Functions

@@ -228,82 +228,11 @@ h4 {
   height:180px;
 }
 
-.notifications-icon {
-  color: #d3c2f4;
-  width: 10px;
-  top: 0;
-  display: block;
-  right: 0;
+.bigHomeBtn:hover {
+  background-color: #c4b0e9;
+
 }
 
-.card {
-  background-color: #FFF3F3;
-  border-radius: 10px;
-  border: 1px solid #D22108;
-  margin: 0.5rem;
-  box-shadow: none;
-}
-
-.card-media {
-  height: 70px;
-  margin: auto;
-  width: auto;
-}
-
-.card-title {
-  line-height: 1.5em;
-  height: 1.5em;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  /* number of lines to show */
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  color: #79708b;
-  font-weight: bold;
-  font-size: 1.4em;
-  margin-top: 10px;
-}
-
-.details-title {
-  color: #D22108;
-  /* margin-top: 20px; */
-  font-size: 1.4em;
-  margin-bottom: 0;
-  line-height: 1.4em;
-}
-
-.card-text {
-  line-height: 1.5em;
-  height: 3em;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  /* number of lines to show */
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  margin-bottom: 0;
-  margin-top: 5px;
-  color: black;
-}
-
-.filter-button {
-  display: flex;
-  border-radius: 20px;
-  text-transform: none;
-  align-items: center;
-  background-color: #D22108;
-  border: none;
-}
-
-.proximity {
-  color: #6F6F6F;
-  margin-bottom: 0;
-  margin-top: 10px;
-  font-weight: normal;
-  font-size: 0.9em;
-  float: left;
-}
 
 .add-button {
   position: fixed;
@@ -335,54 +264,3 @@ h4 {
   height: 150px;
 }
 
-.username {
-  margin: 0.5rem 0 0 5px;
-  padding: 1px 6px;
-  align-items: center;
-  border: solid #FFF3F3;
-  background-color: #FFF3F3;
-  color: #8f83a5;
-  border-radius: 20px;
-  width: fit-content;
-}
-
-/* .proximity-description {
-  vertical-align: middle;
-  align-items: right;
-} */
-
-.empty-feed {
-  vertical-align: middle;
-  text-align: center;
-  position: absolute;
-  width: 300px;
-  height: 200px;
-  z-index: 15;
-  top: 50%;
-  left: 50%;
-  margin: -100px 0 0 -150px;
-}
-
-.empty-profile-requests {
-  text-align: center;
-  width: 300px;
-  height: 200px;
-  margin: 10%;
-}
-
-.name {
-  color: #D22108;
-  font-weight: bold;
-  font-size: 1.8em;
-  margin: 10px 0%;
-}
-
-.profile-username {
-  /* margin: 5%; */
-  padding: 1px 6px;
-  align-items: center;
-  border: solid #D22108;
-  background-color: #D22108;
-  color: #FFF3F3;
-  border-radius: 20px;
-}
