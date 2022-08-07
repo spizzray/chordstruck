@@ -191,7 +191,7 @@ function Tuning() {
           '& .MuiDialog-paper': { borderRadius: 3, width: '40%', maxHeight: 435 }
         }}>
         <DialogTitle textAlign={'center'} variant="h6" color="#000000" component="div" sx={{ fontWeight: 'bold', pt: '4%', pb:'2%', textTransform: "uppercase" }}>
-          GUITAR CHORDS
+          GUITAR STRINGS
         </DialogTitle>
         <DialogContent>
           <Box
