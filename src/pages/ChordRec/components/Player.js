@@ -131,7 +131,7 @@ const Player = ({
 	return (
 		<PlayerContainer>
 			<TimeControlContainer>
-				<P>{getTime(songInfo.currentTime || 0)}</P>
+				<P>{getTime(songInfo.currentTime )}</P>
 				<Track currentSong={currentSong}>
 					<Input
 						onChange={dragHandler}

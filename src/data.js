@@ -7,7 +7,7 @@ import Eminor from './assets/Chords/Eminor.png';
 import Cmajor from './assets/Chords/C-major.png';
 
 import Perfect from './assets/Songs/Perfect.mp3';
-
+import graph from './ML/data.json';
 
 
 export default function ChillHop(time) {
@@ -21,7 +21,7 @@ export default function ChillHop(time) {
 		'C:min': Cmajor, //temporary until i find the correct chord diagram
 	}
 
-	let currentChord = MLdata[0][2]
+	let currentChord = ""
 	let nextChord = ""
 	// let pastChord = ""
 	for (let n=0; n<MLdata.length; n++) {
@@ -31,7 +31,7 @@ export default function ChillHop(time) {
 			// pastChord = MLdata[n-1][2]
 		};
 	}
-	// console.log(nextChord)
+	// console.log(MLmodel)
 	
 
 	return [	
@@ -61,7 +61,19 @@ export default function ChillHop(time) {
 	
 }
 
-const MLmodel =[model]
+// function strReplace(){
+// 	var myStr = {graph};
+// 	var newStr = myStr.replace('(', '[').replace('),','],\n');
+	
+// 	// Insert modified string in paragraph
+// 	document.getElementById("myText").innerHTML = newStr;
+// 	return [
+// 		newStr
+// 	]
+// }
+
+const MLmodel = {graph};
+
 
 const MLdata = [
 	[0.0, 7.430385487528345, 'Ab:maj'],
