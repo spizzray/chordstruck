@@ -83,7 +83,7 @@ const Home = () => {
                         },
                         },
                     }}>
-                       TUNING
+                       TUNER
                     </Button>
 
                     <Button className="bigHomeBtn" onClick={() => {navigate('/settings')}} sx={{
@@ -113,6 +113,7 @@ const Home = () => {
                 points: 5
                 }}
             />
+    
             </Box>
         </div>
     )

@@ -1,10 +1,11 @@
 import { v4 as uuidv4 } from "uuid";
 
-import Aminor7 from './assets/Chords/Aminor7.png';
+import Fminor from './assets/Chords/Fminor.png';
 import Amajor from './assets/Chords/Amajor.png';
-import Dmajor6 from './assets/Chords/Dmajor6.png';
 import Eminor from './assets/Chords/Eminor.png';
-import Cmajor from './assets/Chords/C-major.png';
+import Emajor from './assets/Chords/Emajor.png';
+import Cminor from './assets/Chords/Cminor.png';
+import Dmajor from './assets/Chords/Dmajor.png';
 
 import Perfect from './assets/Songs/Perfect.mp3';
 import graph from './ML/data.json';
@@ -14,12 +15,13 @@ export default function ChillHop(time) {
 
 	// LINK CHORDS TO THE CHORD DIAGRAMS
 	const chordType = {
-		'Ab:maj': Aminor7,
-		'F:min': Amajor,
-		'Db:maj': Dmajor6,
-		'Eb:maj': Eminor,
-		'N' : Aminor7,
-		'C:min': Cmajor, //temporary until i find the correct chord diagram
+		'Ab:maj': Amajor,
+		'F:min': Fminor,
+		'Db:maj': Dmajor,
+		'Eb:maj': Emajor,
+		'Eb:min': Eminor,
+		'N' : Amajor,
+		'C:min': Cminor, //temporary until i find the correct chord diagram
 	}
 
 	let currentChord = ""

@@ -43,5 +43,5 @@ npm start
 # Credits
 - ML model: https://github.com/cjbayron/autochord
 - Basic music player design: Wilson from https://github.com/WilsonLe/react-music-player
-- Guitar chord diagrams: https://toneisland.com/easy-guitar-chords/
+- Guitar chord diagrams: https://www.guitarlessons.org/lessons/chords/ 
 - Tuner code: https://github.com/dgvai/webaudio-pitch-tuner
